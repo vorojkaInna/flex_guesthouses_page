@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Neris;
+    src: url(assets/font/neris/Neris-SemiBold.otf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Neris",sans-serif;
+}
+head,body{
+    height: 100%;
+    width: 100% ;
+}
+.main-section{
+    height: 1200px;
+    background-image: url("assets/images/bgr.png");
+    background-size: cover;
+}
+.main-titles{
+    max-width: 1280px;
+    margin: 125px auto 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.main-title{
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    color: #70BB3B;
+}
+.main-subtitle{
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #565656;
+}
+.cards-section{
+    margin: 110px 0 auto;
+
+}
+.cards-section__card-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.all_card_text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cards-section__title{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #343434;
+    margin-bottom: 50px;
+}
+.card-image{
+    border-radius: 5px;
+    width: 100%;
+}
+.card-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #343434;
+    margin-top: 20px;
+}
+.card-text{
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #767676;
+    margin-bottom: 30px;
+}
+.card-parallel-text{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-parallel-text-normal{
+    font-size: 16px;
+    line-height: 22px;
+    color: #767676;
+}
+.card-parallel-text-bold{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #343434;
+}
+.card-button{
+    margin-top: 30px;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid #FF8743;
+    border-radius: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #FF8743;
+}
+.card-link{
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #70BB3B
+}
+.card-button:hover{
+    color: white;
+    background-color: #FF8743;
+    transition-duration: 0.5s;
+}
+.card-link:hover{
+    color: #FF8743;
+}
+
+.m-section {
+    max-width: 1280px;
+    padding: 0;
+    margin: 110px auto 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .m-section {
+        width: 90%
+    }
+    .cards-section__card-row {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .card {
+        width: 100%;
+    }
+}
